@@ -51,7 +51,7 @@
     "rxjs": "~6.6.0"
   },
   "devDependencies": {
-    "@agm/core": "^1.1.0",
+    "@agm/core": "^3.0.0",
     "@angular/animations": "10.0.0",
     "@angular/common": "10.0.0",
     "@angular/compiler": "10.0.0",
