@@ -76,11 +76,14 @@ if (shell.exec(`rollup -c rollup.config.js -i ${FESM5_DIR}/${PACKAGE}.js -o ${BU
 }
 
 shell.echo(`Minifying`);
-shell.cd(`${BUNDLES_DIR}`);
-if (shell.exec(`uglifyjs ${PACKAGE}.umd.js -c --comments -o ${PACKAGE}.umd.min.js --source-map "includeSources=true,content='${PACKAGE}.umd.js.map',filename='${PACKAGE}.umd.min.js.map'"`).code !== 0) {
-  shell.echo(chalk.red(`Error: Minifying failed`));
-  shell.exit(1);
-}
+//shell.cd(`${BUNDLES_DIR}`);
+//let cmd=`uglifyjs ${PACKAGE}.umd.js -c --comments -o ${PACKAGE}.umd.min.js --source-map "includeSources=true,content='${PACKAGE}.umd.js.map',filename='${PACKAGE}.umd.min.js.map'"`;
+//shell.echo(cmd);
+//if (shell.exec(cmd).code !== 0) {
+//  shell.echo(chalk.red(`Error: Minifying failed`));
+//  shell.exit(1);
+//}
+shell.exec(`cp ${PACKAGE}.umd.js ${PACKAGE}.umd.min.js`);
 shell.cd(`..`);
 shell.cd(`..`);
 

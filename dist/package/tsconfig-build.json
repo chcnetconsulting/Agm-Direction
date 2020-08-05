@@ -1,0 +1,48 @@
+{
+    "compilerOptions": {
+        "rootDir": ".",
+        "baseUrl": ".",
+        "paths": {
+            "@angular/*": [
+                "../../node_modules/@angular/*"
+            ],
+            "@rxjs/*": [
+                "../../node_modules/rxjs/*"
+            ]
+        },
+        "outDir": "../",
+        "declaration": true,
+        "strict": true,
+        "strictPropertyInitialization": false,
+        "moduleResolution": "node",
+        "module": "es2020",
+        "target": "es2015",
+        "lib": [
+            "es2018",
+            "dom"
+        ],
+        "skipLibCheck": true,
+        "types": [
+            "googlemaps"
+        ],
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "sourceMap": true,
+        "inlineSources": true,
+        "importHelpers": true
+    },
+    "files": [
+        "public_api.ts",
+        "../../node_modules/zone.js/dist/zone.js.d.ts"
+    ],
+    "angularCompilerOptions": {
+        "fullTemplateTypeCheck": true,
+        "strictInjectionParameters": true,
+        "skipTemplateCodegen": true,
+        "strictMetadataEmit": true,
+        "enableResourceInlining": true,
+        "enableIvy": false,
+        "flatModuleOutFile": "agm-direction.js",
+        "flatModuleId": "agm-direction"
+    }
+}

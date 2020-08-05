@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "strict": true,
+        "strictPropertyInitialization": false,
+        "module": "es2020",
+        "moduleResolution": "node",
+        "rootDir": ".",
+        "sourceMap": true,
+        "inlineSources": true,
+        "target": "es2015",
+        "skipLibCheck": true,
+        "lib": [
+            "es2018",
+            "dom"
+        ],
+        "typeRoots": [
+            "node_modules/@types/"
+        ],
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
