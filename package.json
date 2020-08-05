@@ -85,7 +85,7 @@
     "rollup-plugin-license": "2.0.1",
     "rollup-plugin-node-resolve": "5.0.0",
     "rollup-plugin-sourcemaps": "0.4.2",
-    "rxjs": "~6.6.0",
+    "rxjs": "~6.6.2",
     "sass-loader": "7.1.0",
     "shelljs": "0.8.3",
     "source-map-loader": "0.2.4",
